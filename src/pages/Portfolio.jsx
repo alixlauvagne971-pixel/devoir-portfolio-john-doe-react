@@ -17,7 +17,7 @@ const projects = [
     subtitle: "Site de vente de produits frais en ligne",
     img: freshFood,
     footer: "Site réalisé avec PHP & MySQL",
-    tech: ["React", "Bootstrap", "PHP", "MySQL"]
+    tech: ["REACT", "Bootstrap", "PHP", "MySQL"]
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const projects = [
   {
     id: 4,
     title: "SEO",
-    subtitle: "Optimisation du référencement naturel",
+    subtitle: "Optimisation du référencement d'un site e-commerce",
     img: seo,
     footer: "Utilisation des outils SEO",
     tech: ["Google Analytics", "SEO", "Search Console"]
@@ -46,15 +46,15 @@ const projects = [
   {
     id: 5,
     title: "Création d'une API",
-    subtitle: "API REST développée en Node.js",
+    subtitle: "API RESTFULL publique",
     img: api,
     footer: "Backend PHP - Symfony",
-    tech: ["Node.js", "Express", "REST API"]
+    tech: ["Node.js", "PHP", "REST API"]
   },
   {
     id: 6,
     title: "Maquette d'un site web",
-    subtitle: "Prototype UI/UX réalisé sur Figma",
+    subtitle: "Création du prototype d'un site",
     img: maquette,
     footer: "Réalisé avec Figma",
     tech: ["Figma", "UI Design", "UX Research"]
