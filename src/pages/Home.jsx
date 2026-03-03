@@ -1,5 +1,6 @@
 import heroImage from "../assets/img/hero-bg.jpg";
 import aboutImage from "../assets/img/john-doe-about.jpg";
+import { useEffect, useRef, useState } from "react";
 import "./Home.css";
 
 export default function Home() {
@@ -65,16 +66,47 @@ export default function Home() {
   );
 }
 
+
 function Skill({ label, value, barClass }) {
-  return (
-    <div className="mb-3">
-      <div className="d-flex justify-content-between">
-        <small className="fw-semibold">{label}</small>
-        <small className="text-muted">{value}%</small>
-      </div>
-      <div className="progress" role="progressbar" aria-valuenow={value} aria-valuemin="0" aria-valuemax="100">
-        <div className={`progress-bar ${barClass}`} style={{ width: `${value}%` }} />
-      </div>
-    </div>
+    const [animate, setAnimate] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const el = ref.current;
+        if (!el) return;
+
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+            if (entry.isIntersecting) {
+            requestAnimationFrame(() => setAnimate(true));
+        } else {
+            // quand ça sort de l'écran -> reset
+            setAnimate(false);
+        }
+        },
+        {
+        threshold: 0.35,      // déclenche quand ~35% visible
+        rootMargin: "0px 0px -10% 0px" // évite de déclencher trop tôt
+        }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+    }, []);
+
+    return (
+        <div className="mb-3" ref={ref}>
+            <div className="d-flex justify-content-between">
+                <small className="fw-semibold">{label}</small>
+                <small className="text-muted">{value}%</small>
+            </div>
+
+            <div className="progress" role="progressbar" aria-valuenow={value} aria-valuemin="0" aria-valuemax="100">
+                <div
+                    className={`progress-bar ${barClass}`}
+                    style={{ width: animate ? `${value}%` : "0%" }}
+                />
+            </div>
+        </div>
   );
 }
