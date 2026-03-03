@@ -1,0 +1,28 @@
+
+
+/* Ligne bleue */
+.services-line {
+  width: 250px;
+  height: 4px;
+  background: #0d6efd;
+  border-radius: 2px;
+}
+
+/* Cards hover effect */
+.service-card {
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.06);
+  transition: background-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+.service-card:hover {
+  background: #efefef;             
+  box-shadow: 0 12px 30px rgba(0,0,0,.10);
+  transform: translateY(-3px);
+}
+
+.service-icon img {
+  width: 50px;
+  height: 50px;
+  filter: invert(27%) sepia(94%) saturate(2400%) hue-rotate(200deg) brightness(95%) contrast(95%);
+}
