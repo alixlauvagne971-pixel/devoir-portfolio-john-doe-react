@@ -66,7 +66,7 @@ export default function Home() {
   );
 }
 
-
+// Composant pour afficher une compétence avec une barre de progression animée
 function Skill({ label, value, barClass }) {
     const [animate, setAnimate] = useState(false);
     const ref = useRef(null);

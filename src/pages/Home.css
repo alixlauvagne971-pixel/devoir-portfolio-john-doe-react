@@ -14,7 +14,8 @@
     border-radius: 12px;
 }
 
+/*Animation bar de compétences */
 .progress-bar {
-  transition: width 900ms ease;
+    transition: width 900ms ease;
 }
 
