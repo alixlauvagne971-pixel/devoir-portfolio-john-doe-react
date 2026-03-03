@@ -2,9 +2,9 @@ import "./Services.css";
 
 import banner from "../assets/img/banner.jpg";
 
-import brushIcon from "../assets/img/icones/brush.svg";
-import codeIcon from "../assets/img/icones/code-slash.svg";
-import searchIcon from "../assets/img/icones/search.svg";
+import brushIcon from "../assets/img/icones/services/brush.svg";
+import codeIcon from "../assets/img/icones/services/code-slash.svg";
+import searchIcon from "../assets/img/icones/services/search.svg";
 
 const services = [
   {
