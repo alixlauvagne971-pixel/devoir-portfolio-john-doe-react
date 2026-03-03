@@ -8,45 +8,49 @@ import espaceBienEtre from "../assets/img/portfolio/espace-bien-etre.jpg";
 import seo from "../assets/img/portfolio/seo.jpg";
 import api from "../assets/img/portfolio/coder.jpg";
 import maquette from "../assets/img/portfolio/screens.jpg";
-
-
 const projects = [
   {
     id: 1,
     title: "Fresh Food",
     subtitle: "Site de vente de produits frais en ligne",
     img: freshFood,
+    footer: "Site réalisé avec PHP & MySQL"
   },
   {
     id: 2,
     title: "Restaurant Akira",
     subtitle: "Site vitrine pour restaurant japonais",
     img: restaurantAkira,
+    footer: "Site réalisé avec WordPress"
   },
   {
     id: 3,
     title: "Espace bien-être",
     subtitle: "Landing page pour centre de spa",
     img: espaceBienEtre,
+    footer: "Site réalisé avec Laravel"
   },
   {
     id: 4,
     title: "SEO",
     subtitle: "Optimisation du référencement naturel",
     img: seo,
+    footer: "Utilisation des outils SEO"
   },
   {
     id: 5,
     title: "Création d'une API",
     subtitle: "API REST développée en Node.js",
     img: api,
+    footer: "PHP - Symfony"
   },
   {
     id: 6,
     title: "Maquette d'un site web",
     subtitle: "Prototype UI/UX réalisé sur Figma",
     img: maquette,
-  },
+    footer: "Réalisé avec Figma"
+  }
 ];
 
 export default function Portfolio() {
@@ -87,7 +91,7 @@ export default function Portfolio() {
                             </div>
 
                             <div className="card-footer text-center small text-muted bg-white">
-                            Projet réalisé avec React & Bootstrap
+                            {project.footer}
                             </div>
                         </div>
                     </div>
