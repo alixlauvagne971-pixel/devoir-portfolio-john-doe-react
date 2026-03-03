@@ -1,0 +1,23 @@
+.legal-contact {
+  list-style: none;
+  padding-left: 0;
+}
+
+.legal-accordion .accordion-button {
+  font-weight: 600;
+  background: #f8f9fa;
+}
+
+.legal-accordion .accordion-button:not(.collapsed) {
+  background-color: rgba(13, 110, 253, 0.15);
+  color: #000;
+}
+
+.legal-accordion .accordion-body {
+  padding: 30px;
+}
+
+.legal-accordion h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}

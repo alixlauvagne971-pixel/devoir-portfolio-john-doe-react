@@ -53,7 +53,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Titres (si tu utilises déjà section-title tu peux ignorer) */
+
 .section-title {
   font-weight: 700;
 }
@@ -73,7 +73,7 @@
   resize: vertical;
 }
 
-/* Focus “pro” bleu */
+/* Focus bleu */
 .contact-input:focus,
 .contact-textarea:focus {
   border-color: #0d6efd;
