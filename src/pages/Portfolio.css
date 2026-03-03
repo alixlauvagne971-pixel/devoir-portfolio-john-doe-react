@@ -44,3 +44,55 @@
     box-shadow: 0 10px 25px rgba(0,0,0,.12);
     transform: translateY(-3px);
 }
+
+
+/* Par défaut : badges cachés */
+.tech-container {
+  margin-top: 12px;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;            /* évite clic quand caché */
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+/* Au hover de la card : on affiche */
+.portfolio-card:hover .tech-container {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Badges : style + petite anim */
+.tech-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  background: #e9ecef;
+  color: #333;
+  transition: transform 150ms ease, filter 150ms ease;
+}
+
+.portfolio-card:hover .tech-badge {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  background: #e9ecef;
+  color: #333;
+  transition: all 0.25s ease;
+}
+
+.tech-badge:hover {
+  transform: translateY(-2px);
+  background: #0d6efd;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
