@@ -1,9 +1,12 @@
 import heroImage from "../assets/img/hero-bg.jpg";
 import aboutImage from "../assets/img/john-doe-about.jpg";
+import GithubModal from "../components/GithubModal";
 import { useEffect, useRef, useState } from "react";
 import "./Home.css";
 
 export default function Home() {
+    const [showGithub, setShowGithub] = useState(false);
+
   return (
     <>
       {/* HERO */}
@@ -14,7 +17,7 @@ export default function Home() {
         <div className="container text-center hero__content">
             <h1 className="display-4 fw-bold">Bonjour, je suis John Doe</h1>
             <h2 className="mb-4">Développeur web full stack</h2>
-            <button className="btn btn-danger">En savoir plus</button>
+            <button className="btn btn-danger" onClick={() => setShowGithub(true)}>En savoir plus</button>
         </div>
       </section>
 
@@ -62,6 +65,11 @@ export default function Home() {
                 </div>
             </div>
         </section>
+        <GithubModal
+  show={showGithub}
+  onClose={() => setShowGithub(false)}
+  username="github-john-doe"
+/>
     </>
   );
 }
