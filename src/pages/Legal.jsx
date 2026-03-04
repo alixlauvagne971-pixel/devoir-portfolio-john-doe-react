@@ -6,6 +6,7 @@ import mapIcon from "../assets/img/icones/contact/map.svg";
 import geoIcon from "../assets/img/icones/contact/geo-alt.svg";
 import phoneIcon from "../assets/img/icones/contact/phone.svg";
 import mailIcon from "../assets/img/icones/contact/envelope-at.svg";
+import globeIcon from "../assets/img/icones/contact/globe.svg";
 
 export default function Legal() {
   return (
@@ -72,7 +73,7 @@ export default function Legal() {
                   <p>
                     91 Rue du Faubourg Saint-Honoré, 75008 Paris<br />
                     <a href="https://www.alwaysdata.com" target="_blank">
-                      www.alwaysdata.com
+                      <img src={globeIcon} alt="Site alwaysdata"/> www.alwaysdata.com
                     </a>
                   </p>
                 </div>
