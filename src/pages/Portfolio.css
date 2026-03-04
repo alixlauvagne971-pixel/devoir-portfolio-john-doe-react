@@ -1,48 +1,48 @@
 .portfolio-banner{
-    height: 350px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 /* Overlay sombre */
 .portfolio-banner::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-banner .banner-content{
-    position: relative;
-    z-index: 2;
-    padding-bottom: 40px;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 40px;
 }
 
 .banner-content {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 /* Ligne bleue */
 .portfolio-line{
-    width: 350px;
-    height: 4px;
-    background-color: #0d6efd;
-    border-radius: 2px;
+  width: 350px;
+  height: 4px;
+  background-color: #0d6efd;
+  border-radius: 2px;
 }
 
 .title-line { width:260px; height:4px; background:#0d6efd; }
 
 .portfolio-card {
-    transition: background-color .2s, box-shadow .2s, transform .2s;
-    border-radius: 10px;
-    overflow: hidden;
+  transition: background-color .2s, box-shadow .2s, transform .2s;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .portfolio-card:hover {
-    background: #efefef;
-    box-shadow: 0 10px 25px rgba(0,0,0,.12);
-    transform: translateY(-3px);
+  background: #efefef;
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+  transform: translateY(-3px);
 }
 
 

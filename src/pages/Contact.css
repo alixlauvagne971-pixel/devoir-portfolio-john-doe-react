@@ -1,4 +1,4 @@
-/* Ligne bleue du titre (déjà utilisée ailleurs) */
+/* Ligne bleue */
 .title-line {
   width: 500px;
   height: 4px;
@@ -105,12 +105,10 @@
   box-shadow: none;
 }
 
-/* Colonne coordonnées : on aère un peu */
 .contact-info {
   padding-left: 8px;
 }
 
-/* Map responsive */
 .contact-info iframe {
   width: 100%;
   height: 320px;

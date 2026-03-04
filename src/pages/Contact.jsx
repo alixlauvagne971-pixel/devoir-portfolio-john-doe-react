@@ -1,5 +1,4 @@
 import "./Contact.css";
-
 import map from "../assets/img/icones/contact/map.svg";
 import geo from "../assets/img/icones/contact/geo-alt.svg";
 import phone from "../assets/img/icones/contact/phone.svg";
@@ -25,6 +24,7 @@ export default function Contact() {
           <div className="card contact-card shadow-sm border-0 contact-card">
             <div className="card-body p-4 p-md-5">
               <div className="row g-5">
+
                 {/* Col gauche */}
                 <div className="col-12 col-lg-6">
                   <h2 className="contact-section-title">Formulaire de contact</h2>
@@ -50,15 +50,14 @@ export default function Contact() {
                   <div className="mt-4">
                     <p className="fw-bold mb-2">John Doe</p>
                     <ul className="list-unstyled contact-list mb-4">
-                      <li><img src={map} alt="map" width="15" height="15" className="me-2" /> 40 rue Laure Diebold</li>
-                      <li><img src={geo} alt="geo" width="15" height="15" className="me-2" /> 69009 Lyon, France</li>
-                      <li><img src={phone} alt="phone" width="15" height="15" className="me-2" /> 10 20 30 40 50</li>
-                      <li><img src={envelope} alt="envelope" width="15" height="15" className="me-2" /> john.doe@gmail.com</li>
+                      <li><img src={map} alt="Icone Carte" width="15" height="15" className="me-2" /> 40 rue Laure Diebold</li>
+                      <li><img src={geo} alt="Icone Géolocalisation" width="15" height="15" className="me-2" /> 69009 Lyon, France</li>
+                      <li><img src={phone} alt="Icone Téléphone" width="15" height="15" className="me-2" /> 10 20 30 40 50</li>
+                      <li><img src={envelope} alt="Icone Envelope" width="15" height="15" className="me-2" /> john.doe@gmail.com</li>
                     </ul>
 
                     <div className="map-wrap">
-                      <iframe
-                        title="map"
+                      <iframe title="map"
                         src="https://www.google.com/maps?q=40%20rue%20Laure%20Diebold%2069009%20Lyon&output=embed"
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"

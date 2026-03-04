@@ -1,7 +1,5 @@
 import "./Legal.css";
-
 import { Helmet } from "react-helmet-async";
-
 import mapIcon from "../assets/img/icones/contact/map.svg";
 import geoIcon from "../assets/img/icones/contact/geo-alt.svg";
 import phoneIcon from "../assets/img/icones/contact/phone.svg";
@@ -12,7 +10,7 @@ export default function Legal() {
   return (
     <>
       <Helmet>
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="noindex, nofollow"/>
         <title>Mentions légales</title>
       </Helmet>
 
@@ -31,12 +29,7 @@ export default function Legal() {
             {/* ÉDITEUR */}
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button
-                  className="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#editor"
-                >
+                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#editor">
                   Editeur du site
                 </button>
               </h2>
@@ -45,10 +38,10 @@ export default function Legal() {
                 <div className="accordion-body">
                   <h5>John Doe</h5>
                   <ul className="list-unstyled">
-                    <li><img src={mapIcon} alt="Adresse"/> 40 rue Laure Diebold</li>
-                    <li><img src={geoIcon} alt="Ville"/> 69009 Lyon, France</li>
-                    <li><img src={phoneIcon} alt="Téléphone"/> 10 20 30 40 50</li>
-                    <li><img src={mailIcon} alt="Email"/> john.doe@gmail.com</li>
+                    <li><img src={mapIcon} alt="Icone Carte"/> 40 rue Laure Diebold</li>
+                    <li><img src={geoIcon} alt="Icone Géolocalisation"/> 69009 Lyon, France</li>
+                    <li><img src={phoneIcon} alt="Icone Téléphone"/> 10 20 30 40 50</li>
+                    <li><img src={mailIcon} alt="Icone Envelope"/> john.doe@gmail.com</li>
                   </ul>
                 </div>
               </div>
@@ -57,12 +50,7 @@ export default function Legal() {
             {/* HÉBERGEUR */}
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#host"
-                >
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#host">
                   Hébergeur
                 </button>
               </h2>
@@ -71,9 +59,9 @@ export default function Legal() {
                 <div className="accordion-body">
                   <h5>alwaysdata</h5>
                   <p>
-                    91 Rue du Faubourg Saint-Honoré, 75008 Paris<br />
+                    91 Rue du Faubourg Saint-Honoré, 75008 Paris<br/>
                     <a href="https://www.alwaysdata.com" className="lien" target="_blank">
-                      <img src={globeIcon} alt="Site alwaysdata"/> www.alwaysdata.com
+                      <img src={globeIcon} alt="Icone Globe"/> www.alwaysdata.com
                     </a>
                   </p>
                 </div>
@@ -83,12 +71,7 @@ export default function Legal() {
             {/* CRÉDITS */}
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#credits"
-                >
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#credits">
                   Crédits
                 </button>
               </h2>
@@ -113,9 +96,7 @@ export default function Legal() {
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </section>
     </>

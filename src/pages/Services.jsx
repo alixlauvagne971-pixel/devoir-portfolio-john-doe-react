@@ -1,7 +1,5 @@
 import "./Services.css";
-
 import banner from "../assets/img/banner.jpg";
-
 import brushIcon from "../assets/img/icones/services/brush.svg";
 import codeIcon from "../assets/img/icones/services/code-slash.svg";
 import searchIcon from "../assets/img/icones/services/search.svg";
@@ -30,19 +28,18 @@ const services = [
 export default function Services() {
   return (
     <>
-      {/* Banner comme la maquette */}
       <header
-              className="portfolio-banner d-flex align-items-end text-white"
-              style={{ backgroundImage: `url(${banner})` }}>
-          </header>
+        className="portfolio-banner d-flex align-items-end text-white" alt="Image de fond représentant une onde électrique stylisée"
+        style={{ backgroundImage: `url(${banner})` }}>
+      </header>
 
       {/* Cards */}
       <section className="py-5">
-            <div className="container text-center banner-content">
-                <h1 className="fw-bold mb-2">Mon offre de services</h1>
-                <p className="mb-3">Voici les prestations sur lesquelles je peux intervenir.</p>
-                <div className="portfolio-line mx-auto"></div>
-            </div>
+        <div className="container text-center banner-content">
+          <h1 className="fw-bold mb-2">Mon offre de services</h1>
+            <p className="mb-3">Voici les prestations sur lesquelles je peux intervenir.</p>
+              <div className="portfolio-line mx-auto"></div>
+        </div>
 
         <div className="container">
           <div className="row g-4">
@@ -51,7 +48,7 @@ export default function Services() {
                 <div className="card service-card h-100 border-0 text-center">
                   <div className="card-body p-4">
                     <div className="service-icon mb-3" aria-hidden="true">
-                        <img src={s.icon} alt={`${s.title} icon`} width="40" height="40" />
+                      <img src={s.icon} alt={`${s.title} icon`} width="40" height="40" />
                     </div>
                     <h2 className="h5 fw-bold">{s.title}</h2>
                     <p className="text-muted mb-0">{s.desc}</p>

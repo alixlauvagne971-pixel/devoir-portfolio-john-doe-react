@@ -75,49 +75,43 @@ export default function GithubModal({ show, onClose, username }) {
                   <div className="col-md-7">
 
                     <p className="lien">
-                        <img src={iconePerson} className="me-2 icon-white" width="20" height="20"/>
-                        <a href={profile.html_url} target="_blank" rel="noreferrer"className="text-info">
-                        John Doe
-                        </a>
+                        <img src={iconePerson} alt="Icone Personne" className="me-2 icon-white" width="20" height="20"/>
+                        <a href={profile.html_url} target="_blank" rel="noreferrer"className="text-info">John Doe</a>
                     </p>
 
-                    <hr />
+                    <hr/>
 
                     <p>
-                        <img src={geo} className="me-2 icon-white" width="20" height="20"/> {profile.location}
+                        <img src={geo} alt="Icone Géolocalisation" className="me-2 icon-white" width="20" height="20"/> {profile.location}
                     </p>
 
-                    <hr />
+                    <hr/>
 
                     <p>
-                        <img src={iconeCard} className="me-2 icon-white" width="20" height="20"/> {profile.bio || "Aucune bio"}
+                        <img src={iconeCard} alt="Icone Carte" className="me-2 icon-white" width="20" height="20"/> {profile.bio || "Aucune bio"}
                     </p>
 
-                    <hr />
+                    <hr/>
 
                     <p>
-                        <img src={iconeBox} className="me-2 icon-white" width="20" height="20"/> Reposetories : {profile.public_repos}
+                        <img src={iconeBox} alt="Icone Boîte" className="me-2 icon-white" width="20" height="20"/> Reposetories : {profile.public_repos}
                     </p>
 
                     <p>
-                      <img src={iconePeople} className="me-2 icon-white" width="20" height="20"/> Followers : {profile.followers}
+                      <img src={iconePeople} alt="Icone de plusieurs personnes" className="me-2 icon-white" width="20" height="20"/> Followers : {profile.followers}
                     </p>
 
                     <p>
-                      <img src={iconePeople} className="me-2 icon-white" width="20" height="20"/> Following : {profile.following}
+                      <img src={iconePeople} alt="Icone de personnes" className="me-2 icon-white" width="20" height="20"/> Following : {profile.following}
                     </p>
-
                   </div>
                 </div>
               )}
-
             </div>
 
             {/* footer */}
             <div className="modal-footer border-secondary">
-              <button className="btn btn-secondary" onClick={onClose}>
-                Fermer
-              </button>
+              <button className="btn btn-secondary" onClick={onClose}>Fermer</button>
             </div>
 
           </div>

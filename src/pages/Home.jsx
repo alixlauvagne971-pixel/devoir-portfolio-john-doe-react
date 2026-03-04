@@ -11,7 +11,7 @@ export default function Home() {
     <>
       {/* HERO */}
       <section
-        className="hero hero--overlay text-white"
+        className="hero hero--overlay text-white" alt="Image de fond représentant un développeur au travail"
         style={{ backgroundImage: `url(${heroImage})` }}>
 
         <div className="container text-center hero__content">
@@ -65,11 +65,7 @@ export default function Home() {
                 </div>
             </div>
         </section>
-        <GithubModal
-  show={showGithub}
-  onClose={() => setShowGithub(false)}
-  username="github-john-doe"
-/>
+        <GithubModal show={showGithub}onClose={() => setShowGithub(false)} username="github-john-doe"/>
     </>
   );
 }
