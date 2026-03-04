@@ -1,0 +1,16 @@
+.social-icon {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 1;
+}
+
+footer a {
+  transition: font-weight 0.2s ease;
+}
+
+footer a:hover {
+  font-weight: 700;
+}

@@ -72,7 +72,7 @@ export default function Legal() {
                   <h5>alwaysdata</h5>
                   <p>
                     91 Rue du Faubourg Saint-Honoré, 75008 Paris<br />
-                    <a href="https://www.alwaysdata.com" target="_blank">
+                    <a href="https://www.alwaysdata.com" className="lien" target="_blank">
                       <img src={globeIcon} alt="Site alwaysdata"/> www.alwaysdata.com
                     </a>
                   </p>
@@ -94,21 +94,21 @@ export default function Legal() {
               </h2>
 
               <div id="credits" className="accordion-collapse collapse">
-                <div className="accordion-body">
+                <div className="accordion-body fst-italic">
                   <p>
                     Ce site a été réalisé par John Doe, étudiant au
-                    <a href="https://www.centre-europeen-formation.fr/" target="_blank"> Centre Européen de formation</a>.
+                    <a href="https://www.centre-europeen-formation.fr/" className="lien" target="_blank"> Centre Européen de formation</a>.
                   </p>
 
                   <p>
                     Les images utilisées sur ce site sont libres de droits
                     et ont été obtenues sur le site
-                    <a href="https://pixabay.com/fr/" target="_blank"> Pixabay</a>.
+                    <a href="https://pixabay.com/fr/" className="lien" target="_blank"> Pixabay</a>.
                   </p>
 
                   <p>
                     La favicon de ce site a été fournie par
-                    <a href="https://www.flaticon.com/free-icons/website" target="_blank"> Freepik - Flaticon</a>.
+                    <a href="https://www.flaticon.com/free-icons/website" className="lien" target="_blank"> Freepik - Flaticon</a>.
                   </p>
                 </div>
               </div>

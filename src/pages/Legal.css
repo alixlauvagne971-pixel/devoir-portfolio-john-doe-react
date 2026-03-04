@@ -21,3 +21,8 @@
   font-weight: 700;
   margin-bottom: 10px;
 }
+
+.lien {
+  text-decoration: underline;
+  color: #0d6efd !important;
+}

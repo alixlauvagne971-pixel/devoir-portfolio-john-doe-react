@@ -74,7 +74,7 @@ export default function GithubModal({ show, onClose, username }) {
                   {/* infos */}
                   <div className="col-md-7">
 
-                    <p>
+                    <p className="lien">
                         <img src={iconePerson} className="me-2 icon-white" width="20" height="20"/>
                         <a href={profile.html_url} target="_blank" rel="noreferrer"className="text-info">
                         John Doe

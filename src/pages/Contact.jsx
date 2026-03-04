@@ -21,7 +21,7 @@ export default function Contact() {
 
       {/* Card */}
       <section className="py-5 bg-light">
-        <div className="container">
+        <div className="container contact-form">
           <div className="card contact-card shadow-sm border-0 contact-card">
             <div className="card-body p-4 p-md-5">
               <div className="row g-5">
