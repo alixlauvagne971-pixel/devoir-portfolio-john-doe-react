@@ -1,9 +1,28 @@
 import { useEffect, useState } from "react";
+import iconeBox from "../assets/img/icones/modal/box-seam.svg";
+import iconeCard from "../assets/img/icones/modal/card-text.svg";
+import geo from "../assets/img/icones/contact/geo-alt.svg";
+import iconePeople from "../assets/img/icones/modal/people.svg";
+import iconePerson from "../assets/img/icones/modal/person.svg";
+import "./GithubModal.css";
+
 
 export default function GithubModal({ show, onClose, username }) {
 
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+  if (show) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [show]);
 
   useEffect(() => {
 
@@ -30,7 +49,7 @@ export default function GithubModal({ show, onClose, username }) {
       {/* modal */}
       <div className="modal fade show d-block">
         <div className="modal-dialog modal-lg modal-dialog-centered">
-          <div className="modal-content bg-dark text-light">
+          <div className="modal-content bg-dark text-light custom-card">
 
             {/* header */}
             <div className="modal-header border-secondary">
@@ -49,48 +68,43 @@ export default function GithubModal({ show, onClose, username }) {
                   {/* avatar */}
                   <div className="col-md-5 text-center">
                     <img
-                      src={profile.avatar_url} alt="avatar" className="img-fluid rounded" style={{ maxWidth: "250px" }}/>
+                      src={profile.avatar_url} alt="avatar" className="img-fluid rounded github-avatar" style={{ maxWidth: "250px" }}/>
                   </div>
 
                   {/* infos */}
                   <div className="col-md-7">
 
                     <p>
-                      <strong>👤</strong>{" "}
-                      <a
-                        href={profile.html_url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-info"
-                      >
-                        {profile.login}
-                      </a>
+                        <img src={iconePerson} className="me-2 icon-white" width="20" height="20"/>
+                        <a href={profile.html_url} target="_blank" rel="noreferrer"className="text-info">
+                        John Doe
+                        </a>
                     </p>
 
                     <hr />
 
                     <p>
-                      <strong>📍</strong> {profile.location}
+                        <img src={geo} className="me-2 icon-white" width="20" height="20"/> {profile.location}
                     </p>
 
                     <hr />
 
                     <p>
-                      <strong>💬</strong> {profile.bio || "Aucune bio"}
+                        <img src={iconeCard} className="me-2 icon-white" width="20" height="20"/> {profile.bio || "Aucune bio"}
                     </p>
 
                     <hr />
 
                     <p>
-                      <strong>📦 Repositories :</strong> {profile.public_repos}
+                        <img src={iconeBox} className="me-2 icon-white" width="20" height="20"/> Reposetories : {profile.public_repos}
                     </p>
 
                     <p>
-                      <strong>👥 Followers :</strong> {profile.followers}
+                      <img src={iconePeople} className="me-2 icon-white" width="20" height="20"/> Followers : {profile.followers}
                     </p>
 
                     <p>
-                      <strong>➡️ Following :</strong> {profile.following}
+                      <img src={iconePeople} className="me-2 icon-white" width="20" height="20"/> Following : {profile.following}
                     </p>
 
                   </div>
