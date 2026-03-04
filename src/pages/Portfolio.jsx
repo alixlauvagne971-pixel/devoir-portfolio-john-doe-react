@@ -62,7 +62,7 @@ export default function Portfolio() {
   return (
     <>
     <header
-        className="portfolio-banner d-flex align-items-end text-white" alt="Image de fond représentant une onde électrique stylisée"
+        className="portfolio-banner d-flex align-items-end text-white"
         style={{ backgroundImage: `url(${banner})` }}>
     </header>
 

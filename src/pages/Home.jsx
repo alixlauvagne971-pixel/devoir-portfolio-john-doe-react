@@ -11,7 +11,7 @@ export default function Home() {
     <>
       {/* HERO */}
       <section
-        className="hero hero--overlay text-white" alt="Image de fond représentant un développeur au travail"
+        className="hero hero--overlay text-white"
         style={{ backgroundImage: `url(${heroImage})` }}>
 
         <div className="container text-center hero__content">
